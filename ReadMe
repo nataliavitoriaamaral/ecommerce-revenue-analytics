@@ -1,0 +1,72 @@
+
+## Business Case 
+
+Este repositório contém a resolução de um case técnico de uma empresa hipotética com o objetivo de aplicar conceitos de análise de dados. 
+O projeto está dividido em duas frentes: uma de análise exploratória de dados (via Jupyter Notebooks) e outra de visualização de dados (via Dashboard interativo em Streamlit).
+
+# Organização das Respostas
+Para facilitar a leitura e avaliação, as respostas às perguntas propostas no case foram divididas da seguinte forma:
+
+- Pergunta 6: Respondida em detalhes no notebook limpeza_dados.ipynb, juntamente com todo o passo a passo de tratamento e limpeza da base de dados original.
+
+- Perguntas 1 a 5: Respondidas no notebook analises.ipynb, que contém as análises exploratórias, testes estatísticos, além da geração de todos os gráficos e tabelas.
+
+# Estrutura do Projeto
+A organização dos arquivos no repositório segue a arquitetura abaixo:
+
+ProjetoAnalytics/
+├── base_dados/
+│   └── (Arquivos .csv originais fornecidos no case)
+├── notebooks/
+│   ├── outputs/
+│   │   └── (Imagens dos gráficos em .png e as novas bases tratadas em .csv)
+│   ├── limpeza_dados.ipynb      # Tratamento de dados e Resposta da Pergunta 6
+│   └── analises.ipynb           # Respostas às Perguntas 1 a 5 e análises complementares
+├── dashboard.py                 # Código-fonte da aplicação web (Streamlit)
+└── README.md                    # Documentação do projeto
+
+# Como executar este projeto:
+
+Pré-requisitos e Instalação:
+Para que os códigos funcionem, você precisa ter o Python 3.14 instalado no seu computador, além de um pacote de ferramentas específicas (bibliotecas) usadas para ler os dados e construir os gráficos.
+
+- Para instalar todas essas ferramentas de uma só vez, você precisará abrir o terminal do seu computador:
+
+No Windows: Procure por "Prompt de Comando" ou "PowerShell" no menu Iniciar.
+
+No Mac: Procure por "Terminal".
+
+Com o terminal aberto, copie o comando abaixo, cole na tela preta e aperte Enter:
+
+- pip install pandas numpy streamlit plotly scipy matplotlib seaborn
+
+O sistema baixará e instalará tudo automaticamente.
+
+# Como abrir o Dashboard Interativo
+
+O Dashboard foi construído usando o Streamlit, uma ferramenta que transforma o código Python em uma página web interativa. 
+Para abri-lo, precisamos "dizer" ao terminal exatamente onde a pasta do projeto está salva no seu computador.
+Fazemos isso usando o comando cd (que significa change directory, ou "mudar de diretório").
+
+- Passo A: Copie o caminho da pasta raiz
+Encontre onde você salvou a pasta do projeto no seu computador e copie o caminho dela.
+
+Exemplo no Windows: C:\Users\SeuNome\Downloads\Projeto
+
+Exemplo no Mac: /Users/SeuNome/Downloads/Projeto
+
+- Passo B: Entre na pasta usando o terminal
+No terminal, digite cd, dê um espaço, cole o caminho que você copiou e aperte Enter.
+Ficará parecido com isso:
+cd C:\Users\SeuNome\Downloads\Projeto
+
+- Se alguma pasta no seu caminho tiver espaços no nome, coloque o caminho inteiro entre aspas. Exemplo: cd "C:\Meus Documentos\Projeto"
+
+- Passo C: Inicie o Dashboard
+Agora que o seu terminal já está dentro da pasta correta, digite o comando abaixo e aperte Enter:
+- streamlit run dashboard.py
+
+O terminal iniciará um servidor local e abrirá automaticamente uma nova aba no seu navegador de internet (como Chrome ou Edge) com o Dashboard.
+
+Caso o sistema exiba uma mensagem de erro dizendo que o comando "streamlit" não foi reconhecido, utilize esta versão alternativa do comando e aperte Enter:
+- python -m streamlit run dashboard.py
