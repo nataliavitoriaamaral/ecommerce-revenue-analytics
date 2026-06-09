@@ -14,16 +14,18 @@ Para facilitar a leitura e avaliação, as respostas às perguntas propostas no 
 # Estrutura do Projeto
 A organização dos arquivos no repositório segue a arquitetura abaixo:
 
+```text
 ProjetoAnalytics/
 ├── base_dados/
 │   └── (Arquivos .csv originais fornecidos no case)
 ├── notebooks/
 │   ├── outputs/
 │   │   └── (Imagens dos gráficos em .png e as novas bases tratadas em .csv)
-│   ├── limpeza_dados.ipynb      # Tratamento de dados e Resposta da Pergunta 6
-│   └── analises.ipynb           # Respostas às Perguntas 1 a 5 e análises complementares
-├── dashboard.py                 # Código-fonte da aplicação web (Streamlit)
-└── README.md                    # Documentação do projeto
+│   ├── limpeza_dados.ipynb     # Tratamento de dados e Resposta da Pergunta 6
+│   └── analises.ipynb          # Respostas às Perguntas 1 a 5 e análises complementares
+├── dashboard.py                # Código-fonte da aplicação web (Streamlit)
+└── README.md                   # Documentação do projeto
+```
 
 # Como executar este projeto:
 
