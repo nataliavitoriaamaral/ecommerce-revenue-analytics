@@ -71,7 +71,7 @@ O terminal iniciará um servidor local e abrirá automaticamente uma nova aba no
 Caso o sistema exiba uma mensagem de erro dizendo que o comando "streamlit" não foi reconhecido, utilize esta versão alternativa do comando e aperte Enter:
 - python -m streamlit run dashboard.py
 
-### gitTecnologias Utilizadas
+### Tecnologias Utilizadas
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
